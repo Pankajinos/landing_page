@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bebas+Neue&family=Courgette&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Redressed&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Single+Day&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bebas+Neue&family=Courgette&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&family=Mukta:wght@200;300;400;500;600;700;800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Redressed&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Single+Day&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bebas+Neue&family=Courgette&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&family=Mukta:wght@200;300;400;500;600;700;800&family=Outfit:wght@100..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Redressed&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Single+Day&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mukta", sans-serif;
+    font-weight: 900;
+
+}
+
+body {}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 12px;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+nav h3 {
+    font-size: 55px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul a {
+    text-decoration: none;
+    padding: 30px;
+    font-family: "Zilla Slab", serif;
+    font-weight: 800;
+    padding-bottom: 2vw;
+
+}
+
+nav ul a:hover {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.login-page {
+    display: flex;
+
+
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+}
+
+p {
+        font-size: 17px;
+    /* padding: 23px 0px; */
+}
+
+.right {
+    width: 50%;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vw; */
+}
+
+img {
+    /* padding-top: ; */
+    width: 100%;
+    height: 40vw;
+    object-fit: contain;
+}
+
+.left {
+    width: 50%;
+    padding: 0px 8px 0px 5vw;
+    padding-top: max(18vh, 120px);
+
+
+}
+
+
+input {
+    height: 50px;
+    width: 96%;
+    color: blue;
+    align-items: baseline;
+    padding: 32px 6px 0vw 1px;
+    font-size: 20px;
+    border: 1px solid rgb(186, 186, 186);
+    border-left: 8px solid blue;
+}
+
+
+
+.holder {
+    position: absolute;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+.blue {
+    color: blue;
+}
+
+.gray {
+    color: rgb(77, 77, 77);
+    font-weight: 500;
+}
+
+.border-blue {
+    border: 2px solid blue;
+    color: blue;
+}
+
+.background-blue {
+    background-color: blue;
+    color: white;
+}
+
+.lower-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+
+}
+
+.remember p {
+    padding-left: 4px;
+
+}
+
+
+#chbox {
+    height: 20px;
+    width: 20px;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 34px;
+}
+
+button {
+    width: 102px;
+    height: 43px;
+    border-radius: 4px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.7;
+}
+.Border-Blue {
+    border: 1px solid blue;
+}
+
+button a {
+    color: blue;
+}
+
+
+
+.alternatives {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 34px;
+    padding-right: 1vw;
+    cursor: pointer;
+}
+
+.show-on-mobile {
+    display: none;
+}
+
+.mobile-bar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 12vh;
+    width: 60vw;
+    height: 100vh;
+    right: 0;
+    align-items: left;
+    justify-content: flex-start;
+    background-color: rgba(235, 235, 235, 0.961);
+
+
+
+}
+
+.left-mobile-bar {
+    display: none;
+    position: absolute;
+    top: 12vh;
+    width: 40vw;
+    height: 100vh;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.352);
+}
+
+.mobile-bar li {
+    padding: 14px 4px;
+}
+
+.alternatives p a {
+    text-decoration: none;
+    color: blue;
+
+}
+
+.alternatives p a:hover {
+    color: black;
+
+
+}
+
+
+.bars,
+.x {
+    display: none;
+}
+
+@media (max-width:1100px) {
+    nav {
+        font-size: 15px;
+
+    }
+
+    nav ul li a {
+        padding: 12px;
+    }
+}
+
+@media (max-width:800px) {
+    nav {
+        padding-top: 0px;
+        top: 2px;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    body {
+        background-image: url("https://media.licdn.com/dms/image/C5112AQHXIbVHlpJn7Q/article-cover_image-shrink_720_1280/0/1562041146576?e=1719446400&v=beta&t=8cAQYJhfPVlEW_MaFh3s-8aiw5xoHc1QtOTRJYnNCHE");
+        background-repeat: no-repeat;
+        background-color: rgba(197, 229, 234, 0.765);
+        background-position-x: center;
+        background-blend-mode: lighten;
+    }
+}
+
+@media (min-height:800px) {}

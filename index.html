@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bdfed66c45.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <h3 class="blue">Digital</h3>
+        <ul class="hide-on-mobile">
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Pricing</a></li>
+        </ul>
+        <ul class="show-on-mobile mobile-bar">
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Pricing</a></li>
+        </ul>
+        <div class="left-mobile-bar">
+        </div>
+        <li class="bars" onclick=bars_click()><i class="fa-solid fa-bars "></i></li>
+        <li class="x" onclick=x_click()><i class="fa-solid fa-xmark x"></i></li>
+
+    </nav>
+    <div class="login-page">
+        <div class="left">
+            <h2 class="blue">Artificial Intelligence Driving Results For The Travel Industry</h2>
+            <p class="gray" style="padding-bottom: 2vw;">Welcome back!Please login to your account.</p>
+            <p class="gray holder">Email Address</p>
+            <input type="text">
+            <p class="gray holder">Password</p>
+            <input type="password">
+            <div class="lower-bar" style="padding: 2vw 0px;">
+                <div class="remember">
+                    <input type="checkbox" name="" id="chbox">
+                    <p class="gray">RememberMe</p>
+                </div>
+                <p class="gray" style="cursor: pointer;">Forgot Password?</p>
+
+            </div>
+            <div class="buttons">
+                <button class="background-blue">Login</button>
+                <button class="Border-Blue blue">Sign Up</button>
+            </div>
+            <div class="alternatives">
+                <p class="gray">Or login with</p>
+                <p class="blue"><a href="">Facebook</a></p>
+                <p class="blue"><a href="">Linkedin</a></p>
+                <p class="blue"><a href="">Google</a></p>
+            </div>
+        </div>
+
+        <div class="right hide-on-mobile">
+            <img src="https://media.licdn.com/dms/image/C5112AQHXIbVHlpJn7Q/article-cover_image-shrink_720_1280/0/1562041146576?e=1719446400&v=beta&t=8cAQYJhfPVlEW_MaFh3s-8aiw5xoHc1QtOTRJYnNCHE"
+                alt="">
+
+        </div>
+    </div>
+    <div class="page">
+
+    </div>
+    
+    <script>
+        function bars_click() {
+
+            // document.querySelector(".bars").style.display="none";
+            // document.querySelector(".left-mobile-bar").style.display="block";
+            document.querySelector(".left-mobile-bar").setAttribute("style", "display:block");
+            document.querySelector(".bars").setAttribute("style", "display:none");
+            document.querySelector(".mobile-bar").setAttribute("style", "display:flex");
+            document.querySelector(".x").setAttribute("style", "display:block");
+        }
+        function x_click() {
+            document.querySelector(".mobile-bar").setAttribute("style", "display:none");
+            document.querySelector(".left-mobile-bar").setAttribute("style", "display:none")
+            console.log("Entered");
+            document.querySelector(".bars").setAttribute("style", "display:block");
+            document.querySelector(".x").setAttribute("style", "display:none");
+        }
+    </script>
+</body>
+
+</html>
